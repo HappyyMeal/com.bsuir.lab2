@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<trains>
+	<train>
+		<arrivalDate>2016-02-26T00:48:36.608+03:00</arrivalDate>
+		<arrivalPlace>Mogilev</arrivalPlace>
+		<arrivalStation>Second</arrivalStation>
+		<arrivalTime>2016-02-26T00:48:36.608+03:00</arrivalTime>
+		<departureDate>2016-02-26T00:48:36.608+03:00</departureDate>
+		<departurePlatform>First</departurePlatform>
+		<departureStation>Minsk</departureStation>
+		<departureTime>2016-02-26T00:48:36.608+03:00</departureTime>
+		<fare>45000.0</fare>
+		<id>1</id>
+	</train>
+	<train>
+		<arrivalDate>2016-02-26T00:48:36.608+03:00</arrivalDate>
+		<arrivalPlace>Brest</arrivalPlace>
+		<arrivalStation>Second</arrivalStation>
+		<arrivalTime>2016-02-26T00:48:36.608+03:00</arrivalTime>
+		<departureDate>2016-02-26T00:48:36.608+03:00</departureDate>
+		<departurePlatform>First</departurePlatform>
+		<departureStation>Grodno</departureStation>
+		<departureTime>2016-02-26T00:48:36.608+03:00</departureTime>
+		<fare>10000.0</fare>
+		<id>2</id>
+	</train>
+	<train>
+		<arrivalDate>2016-02-26T00:48:36.608+03:00</arrivalDate>
+		<arrivalPlace>Gomel</arrivalPlace>
+		<arrivalStation>Second</arrivalStation>
+		<arrivalTime>2016-02-26T00:48:36.608+03:00</arrivalTime>
+		<departureDate>2016-02-26T00:48:36.608+03:00</departureDate>
+		<departurePlatform>First</departurePlatform>
+		<departureStation>Vitebsk</departureStation>
+		<departureTime>2016-02-26T00:48:36.608+03:00</departureTime>
+		<fare>13000.0</fare>
+		<id>3</id>
+	</train>
+</trains>

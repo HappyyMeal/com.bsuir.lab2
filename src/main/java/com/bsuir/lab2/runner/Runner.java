@@ -23,12 +23,13 @@ public class Runner {
 			throw new RuntimeException("Source type has not been defined properly. Please use: "
 					+ SourceType.XML.toString() + " and " + SourceType.JSON.toString());
 		}
-
+		
 		if (allTransports != null && !allTransports.isEmpty())
 			toReport(allTransports);
 	}
 
 	private static void toReport(List<Transport> alList) {
 		// JFreeChart
+
 	}
 }

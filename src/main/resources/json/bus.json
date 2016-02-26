@@ -1,0 +1,30 @@
+[  
+   {  
+      "id":14,
+      "departureDate":1456521067369,
+      "departureTime":1456521067521,
+      "departureStation":"Departure station",
+      "departurePlatform":"Platform 1",
+      "arrivalPlace":"Arrival place",
+      "arrivalStation":"Arrival station",
+      "arrivalDate":1456521068297,
+      "arrivalTime":1456521068480,
+      "fare":12.2,
+      "mark":"BMW",
+      "journeyTime":12
+   },
+   {  
+      "id":15,
+      "departureDate":1456521069456,
+      "departureTime":1456521069620,
+      "departureStation":"Departure station",
+      "departurePlatform":"Platform 1",
+      "arrivalPlace":"Arrival place",
+      "arrivalStation":"Arrival station",
+      "arrivalDate":1456521070426,
+      "arrivalTime":1456521070932,
+      "fare":12.2,
+      "mark":"BMW",
+      "journeyTime":12
+   }
+]

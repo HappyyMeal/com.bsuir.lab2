@@ -1,0 +1,26 @@
+[  
+   {  
+      "id":12,
+      "departureDate":1456521071172,
+      "departureTime":1456521071212,
+      "departureStation":"Departure station",
+      "departurePlatform":"Platform 2",
+      "arrivalPlace":"Arrival place",
+      "arrivalStation":"Arrival station",
+      "arrivalDate":1456521071413,
+      "arrivalTime":1456521071454,
+      "fare":12.2
+   },
+   {  
+      "id":13,
+      "departureDate":1456521071616,
+      "departureTime":1456521071657,
+      "departureStation":"Departure station",
+      "departurePlatform":"Platform 2",
+      "arrivalPlace":"Arrival place",
+      "arrivalStation":"Arrival station",
+      "arrivalDate":1456521071859,
+      "arrivalTime":1456521071899,
+      "fare":12.2
+   }
+]

@@ -7,6 +7,7 @@ import com.bsuir.lab2.absract_factory.impl.JSONFactory;
 import com.bsuir.lab2.absract_factory.impl.XMLFactory;
 import com.bsuir.lab2.builder.FactoryBuilder;
 import com.bsuir.lab2.model.Transport;
+import com.bsuir.lab2.report.ReportService;
 import com.bsuir.lab2.type.SourceType;
 
 public class Runner {
@@ -28,8 +29,10 @@ public class Runner {
 			toReport(allTransports);
 	}
 
-	private static void toReport(List<Transport> alList) {
-		// JFreeChart
+	private static void toReport(List<Transport> tranportList) {
 
+		ReportService reportService = new ReportService();
+		reportService.listToHtml(tranportList);
+		reportService.listToJPG(tranportList);
 	}
 }

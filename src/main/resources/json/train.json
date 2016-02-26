@@ -1,26 +1,38 @@
 [  
    {  
-      "id":12,
+      "id":1,
       "departureDate":1456521071172,
       "departureTime":1456521071212,
-      "departureStation":"Departure station",
-      "departurePlatform":"Platform 2",
-      "arrivalPlace":"Arrival place",
-      "arrivalStation":"Arrival station",
+      "departureStation":"Minsk",
+      "departurePlatform":"First",
+      "arrivalPlace":"Mogilev",
+      "arrivalStation":"Second",
       "arrivalDate":1456521071413,
       "arrivalTime":1456521071454,
-      "fare":12.2
+      "fare":45000.0
    },
    {  
-      "id":13,
+      "id":2,
       "departureDate":1456521071616,
       "departureTime":1456521071657,
-      "departureStation":"Departure station",
-      "departurePlatform":"Platform 2",
-      "arrivalPlace":"Arrival place",
-      "arrivalStation":"Arrival station",
+      "departureStation":"Grodno",
+      "departurePlatform":"First",
+      "arrivalPlace":"Brest",
+      "arrivalStation":"Second",
       "arrivalDate":1456521071859,
       "arrivalTime":1456521071899,
-      "fare":12.2
+      "fare":10000.0
+   },
+    {  
+      "id":3,
+      "departureDate":1456521071616,
+      "departureTime":1456521071657,
+      "departureStation":"Vitebsk",
+      "departurePlatform":"First",
+      "arrivalPlace":"Gomel",
+      "arrivalStation":"Second",
+      "arrivalDate":1456521071859,
+      "arrivalTime":1456521071899,
+      "fare":13000.0
    }
 ]

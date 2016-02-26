@@ -3,6 +3,8 @@ package com.bsuir.lab2.report;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.List;
 
 import org.jfree.chart.ChartFactory;
@@ -14,25 +16,28 @@ import com.bsuir.lab2.model.Transport;
 import com.bsuir.lab2.model.impl.Bus;
 import com.bsuir.lab2.model.impl.Plain;
 import com.bsuir.lab2.model.impl.Train;
+import com.bsuir.lab2.storage.Iterator;
+import com.bsuir.lab2.storage.TransportStorage;
 
 public class ReportService {
 
 	private static final String HTML_OUTPUT = "src/main/resources/report/report.html";
 	private static final String JPG_OUTPUT = "src/main/resources/report/report.jpg";
 
-	public void listToHtml(List<Transport> tranportList) {
+	public void listToHtml(TransportStorage storage) {
 
-		String builtReport = htmlReportAsString(tranportList);
+		String builtReport = htmlReportAsString(storage);
 		writeToFile(builtReport, HTML_OUTPUT);
 	}
 
-	public void listToJPG(List<Transport> tranportList) {
+	public void listToJPG(TransportStorage storage) {
 		DefaultPieDataset dataset = new DefaultPieDataset();
 
 		int buses = 0;
 		int trains = 0;
 		int plaines = 0;
-		for (Transport transport : tranportList) {
+		for (Iterator iter = storage.getIterator(); iter.hasNext();) {
+			Transport transport = (Transport) iter.next();
 			if (transport instanceof Bus) {
 				buses++;
 			} else if (transport instanceof Train) {
@@ -50,26 +55,28 @@ public class ReportService {
 		writeToJPG(chart);
 	}
 
-	private String htmlReportAsString(List<Transport> tranportList) {
+	private String htmlReportAsString(TransportStorage storage) {
 		StringBuilder html = new StringBuilder();
 		html.append("<html><head><title>").append("Transports").append("</title></head>").append("<body>");
 
-		for (Transport transport : tranportList) {
-
+		for (Iterator iter = storage.getIterator(); iter.hasNext();) {
+			Transport transport = (Transport) iter.next();
+			DateFormat justDate = new SimpleDateFormat("dd/MM/yyyy");
+			SimpleDateFormat justTime = new SimpleDateFormat("HH:mm");
 			html.append(
 					"<div style='float:left; width:271px; padding: 10px 5px;'><table border='2' style='height: 348px;'><tr style='background:#D02C19;'><td>Transport</td><td>")
 					.append(transport.getClass().getSimpleName()).append("</td></tr>").append("<tr><td>ID</td><td>")
 					.append(transport.getId()).append("</td></tr>").append("<tr><td>Departure Date</td><td>")
-					.append(transport.getDepartureDate().getDate()).append("</td></tr>")
-					.append("<tr><td>Departure Time</td><td>").append(transport.getDepartureTime().getTime())
+					.append(justDate.format(transport.getDepartureDate())).append("</td></tr>")
+					.append("<tr><td>Departure Time</td><td>").append(justTime.format(transport.getDepartureTime()))
 					.append("</td></tr>").append("<tr><td>Departure Station</td><td>")
 					.append(transport.getDepartureStation()).append("</td></tr>")
 					.append("<tr><td>Departure Platform</td><td>").append(transport.getDeparturePlatform())
 					.append("</td></tr>").append("<tr><td>Arrival Place</td><td>").append(transport.getArrivalPlace())
 					.append("</td></tr>").append("<tr><td>Arrival Station</td><td>")
 					.append(transport.getArrivalStation()).append("</td></tr>").append("<tr><td>Arrival Date</td><td>")
-					.append(transport.getArrivalDate().getDate()).append("</td></tr>")
-					.append("<tr><td>Arrival Time</td><td>").append(transport.getArrivalTime().getTime())
+					.append(justDate.format(transport.getArrivalDate())).append("</td></tr>")
+					.append("<tr><td>Arrival Time</td><td>").append(justTime.format(transport.getArrivalTime()))
 					.append("</td></tr>").append("<tr><td>Fare</td><td>").append(transport.getFare())
 					.append("</td></tr>");
 

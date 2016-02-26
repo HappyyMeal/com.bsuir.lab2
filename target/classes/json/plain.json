@@ -1,0 +1,52 @@
+[  
+   {  
+      "id":1,
+      "departureDate":1456521067369,
+      "departureTime":1456521067521,
+      "departureStation":"Moscow",
+      "departurePlatform":"Third",
+      "arrivalPlace":"New York",
+      "arrivalStation":"Fifth",
+      "arrivalDate":1456521068297,
+      "arrivalTime":1456521068480,
+      "fare":1000000.0,
+      "connectionNumber":2,
+      "companyName":"The Simons",
+      "baggageAllowance":50.0,
+      "carryOnBaggageAllowance":25
+   },
+   {  
+      "id":2,
+      "departureDate":1456521067369,
+      "departureTime":1456521067521,
+      "departureStation":"London",
+      "departurePlatform":"Third",
+      "arrivalPlace":"Paris",
+      "arrivalStation":"Fifth",
+      "arrivalDate":1456521068297,
+      "arrivalTime":1456521068480,
+      "fare":2000000.0,
+      "connectionNumber":2,
+      "companyName":"The Philips",
+      "baggageAllowance":75.0,
+      "carryOnBaggageAllowance":50
+   },
+   {  
+      "id":3,
+      "departureDate":1456521067369,
+      "departureTime":1456521067521,
+      "departureStation":"Manchester",
+      "departurePlatform":"Third",
+      "arrivalPlace":"Barca",
+      "arrivalStation":"Fifth",
+      "arrivalDate":1456521068297,
+      "arrivalTime":1456521068480,
+      "fare":300000.0,
+      "connectionNumber":3,
+      "companyName":"Apple",
+      "baggageAllowance":150.0,
+      "carryOnBaggageAllowance":15
+   }
+]
+
+

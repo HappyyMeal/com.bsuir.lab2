@@ -31,9 +31,12 @@ public class JSONFactory implements AbstractFactory {
 		List<Plain> plaines = null;
 
 		try {
-			trains = mapper.readValue(new File(TRAIN_JSON_SOURCE), new TypeReference<List<Train>>() {});
-			buses = mapper.readValue(new File(BUS_JSON_SOURCE), new TypeReference<List<Bus>>() {});
-			plaines = mapper.readValue(new File(PLAIN_JSON_SOURCE), new TypeReference<List<Bus>>() {});
+			trains = mapper.readValue(new File(TRAIN_JSON_SOURCE), new TypeReference<List<Train>>() {
+			});
+			buses = mapper.readValue(new File(BUS_JSON_SOURCE), new TypeReference<List<Bus>>() {
+			});
+			plaines = mapper.readValue(new File(PLAIN_JSON_SOURCE), new TypeReference<List<Plain>>() {
+			});
 		} catch (JsonParseException e) {
 			e.printStackTrace();
 		} catch (JsonMappingException e) {

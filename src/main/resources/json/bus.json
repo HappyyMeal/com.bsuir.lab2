@@ -1,30 +1,44 @@
 [  
    {  
-      "id":14,
+      "id":1,
       "departureDate":1456521067369,
       "departureTime":1456521067521,
-      "departureStation":"Departure station",
-      "departurePlatform":"Platform 1",
-      "arrivalPlace":"Arrival place",
-      "arrivalStation":"Arrival station",
+      "departureStation":"Moscow",
+      "departurePlatform":"Third",
+      "arrivalPlace":"New York",
+      "arrivalStation":"Fifth",
       "arrivalDate":1456521068297,
       "arrivalTime":1456521068480,
-      "fare":12.2,
-      "mark":"BMW",
-      "journeyTime":12
+      "fare":1000000.0,
+      "mark":"Bentley",
+      "journeyTime":50
    },
    {  
-      "id":15,
-      "departureDate":1456521069456,
-      "departureTime":1456521069620,
-      "departureStation":"Departure station",
-      "departurePlatform":"Platform 1",
-      "arrivalPlace":"Arrival place",
-      "arrivalStation":"Arrival station",
-      "arrivalDate":1456521070426,
-      "arrivalTime":1456521070932,
-      "fare":12.2,
+      "id":2,
+      "departureDate":1456521067369,
+      "departureTime":1456521067521,
+      "departureStation":"Malinauka",
+      "departurePlatform":"First",
+      "arrivalPlace":"Baranavichi",
+      "arrivalStation":"Second",
+      "arrivalDate":1456521068297,
+      "arrivalTime":1456521068480,
+      "fare":50000.0,
       "mark":"BMW",
-      "journeyTime":12
+      "journeyTime":5
+   },
+   {  
+      "id":3,
+      "departureDate":1456521067369,
+      "departureTime":1456521067521,
+      "departureStation":"HongKong",
+      "departurePlatform":"First",
+      "arrivalPlace":"Warsaw",
+      "arrivalStation":"Second",
+      "arrivalDate":1456521068297,
+      "arrivalTime":1456521068480,
+      "fare":80000.0,
+      "mark":"AUDI",
+      "journeyTime":19
    }
 ]

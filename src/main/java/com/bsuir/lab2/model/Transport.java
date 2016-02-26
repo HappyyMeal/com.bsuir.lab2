@@ -2,6 +2,8 @@ package com.bsuir.lab2.model;
 
 import java.util.Date;
 
+import javax.xml.bind.annotation.XmlRootElement;
+
 public abstract class Transport {
 
 	private int id;
@@ -96,16 +98,19 @@ public abstract class Transport {
 		this.fare = fare;
 	}
 
+	@Override
+	public String toString() {
+		return "Transport{" +
+				"id=" + id +
+				", departureDate=" + departureDate +
+				", departureTime=" + departureTime +
+				", departureStation='" + departureStation + '\'' +
+				", departurePlatform='" + departurePlatform + '\'' +
+				", arrivalPlace='" + arrivalPlace + '\'' +
+				", arrivalStation='" + arrivalStation + '\'' +
+				", arrivalDate=" + arrivalDate +
+				", arrivalTime=" + arrivalTime +
+				", fare=" + fare +
+				'}';
+	}
 }
-/*
- * јвтобус: вокзал прибыти€, стоимость билетов, марка автобуса , врем€ в пути.
- * 
- * ѕоезд: вокзал прибыти€, типы и стоимость билетов, дата прибыти€ , врем€
- * прибыти€.
- * 
- * —амолет: рассто€ние аэропорта вылета от центра города, дата прилета, врем€
- * прилета, количество пересадок, типы и стоимость билетов, авиакомпани€,
- * максимальный вес багажа, максимальный вес ручной клади, врем€ (интервал)
- * окончани€ регистрации.
- * 
- */

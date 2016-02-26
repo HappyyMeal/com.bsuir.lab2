@@ -54,8 +54,7 @@ public class XMLFactory implements AbstractFactory {
 		}
 		return allBuses;
     }
-    
-    
+
     private List<Train> createTrains(){
     	List<Train> allTrains = new ArrayList<Train>();
     	
@@ -73,7 +72,6 @@ public class XMLFactory implements AbstractFactory {
 		}
 		return allTrains;
     }
-    
     
     private List<Plain> createPlains(){
     	List<Plain> allPlains = new ArrayList<Plain>();

@@ -46,10 +46,12 @@ public class ReportService {
 				plaines++;
 			}
 		}
-
-		dataset.setValue("Bus", buses);
-		dataset.setValue("Train", trains);
-		dataset.setValue("Plain", plaines);
+		if (buses != 0)
+			dataset.setValue("Bus", buses);
+		if (trains != 0)
+			dataset.setValue("Train", trains);
+		if (plaines != 0)
+			dataset.setValue("Plain", plaines);
 
 		JFreeChart chart = ChartFactory.createPieChart("Transport scheme", dataset, true, true, false);
 		writeToJPG(chart);
@@ -64,7 +66,7 @@ public class ReportService {
 			DateFormat justDate = new SimpleDateFormat("dd/MM/yyyy");
 			SimpleDateFormat justTime = new SimpleDateFormat("HH:mm");
 			html.append(
-					"<div style='float:left; width:271px; padding: 10px 5px;'><table border='2' style='height: 348px;'><tr style='background:#D02C19;'><td>Transport</td><td>")
+					"<div style='float:left; padding: 10px 5px;'><table border='2' style='width:271px; height: 407px;'><tr style='background:#D02C19;'><td>Transport</td><td>")
 					.append(transport.getClass().getSimpleName()).append("</td></tr>").append("<tr><td>ID</td><td>")
 					.append(transport.getId()).append("</td></tr>").append("<tr><td>Departure Date</td><td>")
 					.append(justDate.format(transport.getDepartureDate())).append("</td></tr>")

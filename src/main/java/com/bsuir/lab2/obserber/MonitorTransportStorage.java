@@ -18,7 +18,7 @@ public class MonitorTransportStorage implements Observer {
 	}
 
 	public void display() {
-		System.out.println("Transports storage was change. Current transpots amount: " + transportCompacity);
+		System.out.println("Transports storage was changed. Current transpots amount: " + transportCompacity);
 	}
 
 }
